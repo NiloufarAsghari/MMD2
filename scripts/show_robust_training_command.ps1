@@ -1,0 +1,11 @@
+$ErrorActionPreference = "Stop"
+
+Write-Host "Robust reply-boundary preparation:"
+Write-Host "1. Build final-like sample weights:"
+Write-Host "   .\scripts\build_final_like_sample_weights.ps1"
+Write-Host ""
+Write-Host "2. Train the robust Clear Reply vs Ambivalent specialist:"
+Write-Host "   .\scripts\train_reply_boundary_deberta_robust.ps1"
+Write-Host ""
+Write-Host "3. Evaluate it in the current diagnostic ensemble:"
+Write-Host "   .\scripts\evaluate_reply_boundary_ensemble.ps1 -ReplyModelDir outputs\reply_boundary_deberta_seed13_answer_split_robust -ReplyAlpha 0.35"
