@@ -4,16 +4,18 @@ Local implementation for MMD II Project 05 using `ailsntua/QEvasion`.
 
 The modeling code uses only `question` and `interview_answer` as input features. The Hugging Face `train` split is internally split into train/dev. The Hugging Face `test` split is treated as the untouched final evaluation split and is only evaluated when `--eval-final` is passed.
 
-## Team Handoff
+## Project Documentation
 
-Start here when sharing the project:
+Useful project artifacts:
 
-- `docs/TEAM_HANDOFF.md`: best observed test-set result, exact selected recipe, and caveats.
 - `docs/EXPERIMENT_INDEX.md`: experiment map and cleanup rules.
 - `docs/all_experiments.csv`: full experiment ledger.
 - `docs/scoreboard_snapshot.md`: ranked experiment scoreboard snapshot.
+- `docs/TEAM_HANDOFF.md`: compact result summary and selected ensemble recipe.
+- `EXPERIMENT_LOG.md`: chronological experiment notes.
+- `figures/`: visual analysis figures used in the report/poster.
 
-Refresh shareable docs after new runs:
+Refresh documentation snapshots after new runs:
 
 ```powershell
 .\scripts\export_team_docs.ps1
